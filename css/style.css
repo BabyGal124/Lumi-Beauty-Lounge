@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Colors*/
+    /*Backgroud colors */
+    --gold-color: #C9A227;
+    --dark-color:#071020;
+    --white-color:#FFFFFF;
+    --soft-beige:#F5E6D3;
+    --hero-bg:#FAF4EC;
+
+ 
+    /*Font-Family */
+    --font-heading:"Playfair Display", serif;
+    --font-body:"Poppins", sans-serif;
+
+
+          /* font size*/
+     --font-size-t:0.7rem;
+    --font-size-s:0.9rem;
+    --font-size-n:1rem;
+    --font-size-m:1.12rem;
+    --font-size-1:1.5rem;
+    --font-size-x1:2rem;
+    --font-size-xx1:3rem;
+    
+
+    /* font weight*/
+    --font-weight-normal:400;
+    --font-weight-medium:500;
+    --font-weight-semibold:600;
+    --font-weight-bold:700;
+
+    /*Border radius*/
+    --border-radius-s:4px;
+    --border-radius-m:30px;
+    --boder-radius-circle:50%;
+    
+        /* Line Heights */
+    --line-height-body:1.6;
+    --line-height-heading:1.2;
+
+    /*site max width */
+    --site-max-width:1200px
+}
+
+/*Styling for the whole site*/
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+
+/*Header/ Navbar Styling */
+
+header .navbar{
+   display: flex;
+   padding: 10px;
+   align-items: stretch;
+   justify-content: space-between;
+}
+header{
+    background: var(--soft-beige);
+    width: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo{
+    display: flex;
+    flex-direction: column;
+}
+.nav-logo .logo-title{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-x1);
+    color: var(--gold-color);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: 4px;
+}
+.nav-logo .logo-sub{
+    font-family: var(--font-body);
+    font-size: var(--font-size-m);
+    color: var(--dark-color);
+    font-weight: var(--font-weight-normal);
+}
+.navbar .nav-menu{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    
+}
+.navbar .nav-menu .nav-items .nav-link{
+    padding: 20px 25px;
+    color:#111827;
+    font-size:var(--font-size-m);
+    font-family: var(--font-body);
+    align-items: center;
+}
+.navbar .nav-menu .nav-items .nav-link:hover{
+    color:var(--cta-hover);
+}
+.navbar .nav-menu .nav-items .nav-button{
+    background-color :var(--gold-color);
+    padding: 12px 20px;
+    border-radius:var(--border-radius-s);
+    color: #ffff;
+    font-size:var(--font-size-m);
+    font-weight: var(--font-weight-bold);
+    align-items: center;
+}
+.navbar .nav-menu .nav-items .nav-button:hover{
+    color: var(--cta-hover);
+}
+
+
+/*Hero Section Styling */
+.hero-section{
+    background-image: url(../image/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+}
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.hero-section .hero-container{
+    display: flex;
+    align-items: center;
+}
+.hero-section .hero-container .hero-left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 55%;
+    padding-top: 80px;
+}
+ .hero-left .hero-details .title .black{
+    font-size: var(--font-size-xx1);
+    font-family: var(--font-heading);
+    color: var(--dark-color);
+      line-height: var(--line-height-heading);
+}
+ .hero-left .hero-details .title{
+    font-size: var(--font-size-xx1);
+    font-family: var(--font-heading);
+    color: var(--gold-color);
+    line-height: var(--line-height-heading);
+}
+.hero-container .hero-details .subtext{
+    font-family: var(--font-body);
+    font-size: var(--font-size-m);
+    line-height: var(--line-height-body);
+    max-width: 70%;
+}
+.hero-container .hero-service .hero-list .hero-items{
+    font-family: var(--font-body);
+    font-size: var(--font-size-n);
+}
+.hero-section .hero-left .hero-details{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.hero-service .hero-list{
+    display: flex;
+    gap: 25px;
+}
+.hero-service .hero-list li:nth-child(1){
+    list-style-type: none;
+}
+.hero-service .hero-list li{
+    list-style-type: disc;
+}
+
+.hero-container .hero-button{
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+.hero-button .book-appointment {
+  display: inline-block;
+  padding: 0.75rem 2rem;       
+  font-size: var(--font-size-m); 
+  font-weight: var(--font-weight-normal);
+  color: var(--white-color);     
+  background-color: var(--gold-color); 
+  text-decoration: none;
+  font-family: var(--font-body);
+}
+.hero-button .view-service {
+  display: inline-block;
+  padding: 0.75rem 2rem;       
+  font-size: var(--font-size-m); 
+  font-weight: var(--font-weight-normal);
+  color: var(--dark-color);    
+  border: 1px solid var(--gold-color);
+  text-decoration: none;
+  font-family: var(--font-body);
+}
+
+.hero-button .book-appointment:hover {
+ background: transparent;
+    border: 1px solid var(--gold-color);
+    color: var(--dark-color);
+}
+.hero-button .view-service:hover {
+   background-color: var(--gold-color);   
+   color: var(--white-color);   
+}
+
+ 
+/*Service Styling Section */
+.service-section{
+    padding: 120px 0;
+}
+.service-section .service-all{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.service-section .service-all .service-heading{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.service-section .service-all .service-heading .service-title{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-x1);
+}
+.service-section .service-all .service-heading .service-subtext{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-1);
+}
+.service-section .service-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.service-container .service-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.service-item .service-image{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.service-item:hover .service-image{
+    transform: scale(1.07);
+}
+
+.service-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.service-button .service-read{
+  display: inline-block;
+  padding: 12px 35px;       
+  font-size: var(--font-size-m); 
+  font-weight: var(--font-weight-semibold);
+  color: var(--white-color);     
+  background-color: var(--gold-color); 
+  text-decoration: none;
+  font-family: var(--font-body);
+  border-radius: var(--border-radius-s);
+  transition: all 0.3s ease;
+}
+.service-button .service-read:hover{
+   background: transparent;
+    border: 1px solid var(--gold-color);
+    color: var(--dark-color);
+}
+
+
+.service-details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 30px 20px 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 100%);
+    color: var(--white-color);
+    font-family: var(--font-heading);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-semibold);
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+/*Why Choose Goldie Section*/
+.why-choose{
+    padding: 100px 0;
+    background-color: var(--soft-beige);
+    text-align: center;
+}
+.why-choose-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.why-choose-container .why-choose-title{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-x1);
+    color: var(--dark-color);
+    line-height: var(--line-height-heading);
+}
+.why-choose-container .why-choose-text{
+    font-family: var(--font-body);
+    font-size: var(--font-size-m);
+    color: var(--dark-color);
+    line-height: var(--line-height-body);
+    align-items: center;
+    gap: 30px;
+}
+.choose-button{
+    display: flex;
+    justify-content: center;
+}
+.choose-button .choose-book{
+    padding: 12px 25px;
+    background-color: var(--gold-color);
+    color: var(--white-color);
+    font-family: var(--font-body);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-semibold);
+    border-radius: var(--border-radius-s);
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+.choose-button .choose-book:hover{
+      background: transparent;
+    border: 1px solid var(--gold-color);
+    color: var(--dark-color); 
+}
+
+ 
+
+
+/*Testimonal Section Styling */
+.testimonial-section{
+    padding: 90px 0 100px;
+    background: var(--bg-section);
+}
+.testimonial-section .testimonial-heading-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.testimonial-section .testimonial-heading-info .testimonial-heading{
+    font-size: var(--font-size-x1);
+    font-family: var(--font-heading);
+    color: var(--text-main);
+}
+.testimonial-section .testimonial-heading-info .testimonial-title{
+font-size: var(--font-size-1);
+  font-family: var(--font-body);
+  color: var(--text-main);
+}
+.testimonial-section .testimonial-grid{
+   display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.testimonial-section .testimonial-grid .testimonial{
+    background: var(--white-color);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   text-align: center;
+   align-items: center;
+    width: calc(100% / 3 - 50px);
+}
+.testimonial-section .testimonial-grid .testimonial .ratings{
+    color:var(--yellow-color);
+    font-size: var(--font-size-n);
+}
+
+ .testimonial-section .testimonial .testimonial-title{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-m);
+ }
+  .testimonial-section .testimonial .testimonial-message{
+    font-family: var(--font-body);
+    font-size: var(--font-size-n);
+ }
+.testimonial-section .testimonial .testimonial-image{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/*Stay Connected */
+.connect-section{
+    padding: 100px 0;
+    background-color: var(--soft-beige);
+    text-align: center;
+}
+.connect-section .connect-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+.connect-section .connect-container .connect-title{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-x1);
+    color: var(--dark-color);
+    line-height: var(--line-height-heading);
+}
+.connect-section .connect-container .connect-text {
+    font-family: var(--font-body);
+    font-size: var(--font-size-m);
+    color: var(--dark-color);
+    line-height: var(--line-height-body);
+    align-items: center;
+    gap: 30px;
+}
+.connect-section .connect-container .connect-items{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.connect-section .connect-container .connect-items .connect-link i{
+    font-size: var(--font-size-x1);
+    color: var(--dark-color);
+    
+}
+
+
+
+/*Footer Section Styling */
+.footer-line{
+    border: none;
+    border-top: 2px solid var(--gold-color);
+    opacity: 0.7;
+    margin: 0;
+}
+.footer-section{
+    background-color: var(--soft-beige);
+    color: var(--dark-color);
+    padding: 30px 0;
+}
+.footer-section .footer-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.footer-section .footer-items .footer-text{
+    font-family: var(--font-body);
+    font-size: var(--font-size-m);
+    color: var(--dark-color);
+    letter-spacing: 0.5px;
+}
+

@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Colors*/
+    /*Backgroud colors */
+    --bg-main:#f7f5f2;
+     --bg-section: #EFEAE4;
+     --card-bg: #F3E8E0;  
+      --yellow-color:#FBBF24;
+     
+     /*Text Color */
+      --text-main: #2F2F2F;
+      --white-color:#ffff;
+
+    /*CTA Colors */  
+    --cta-bg: #C6A769; 
+      --cta-hover: #B89655; 
+
+
+    --accent-color: #D8A7A7;  
+       --primary-accent: #C6A769;
+      --secondary-accent: #BFA89F;
+
+      
+ 
+    /*Font-Family */
+    --font-heading:'Poppins', sans-serif;
+    --font-body:'Roboto', sans-serif;
+
+
+          /* font size*/
+     --font-size-t:0.7rem;
+    --font-size-s:0.9rem;
+    --font-size-n:1rem;
+    --font-size-m:1.12rem;
+    --font-size-1:1.5rem;
+    --font-size-x1:2rem;
+    --font-size-xx1:3rem;
+    
+
+    /* font weight*/
+    --font-weight-normal:400;
+    --font-weight-medium:500;
+    --font-weight-semibold:600;
+    --font-weight-bold:700;
+
+    /*Border radius*/
+    --border-radius-s:8px;
+    --border-radius-m:30px;
+    --boder-radius-circle:50%;
+    
+        /* Line Heights */
+    --line-height-body:1.6;
+    --line-height-heading:1.2;
+
+    /*site max width */
+    --site-max-width:1300px
+}
+
+/*Styling for the whole site*/
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1300px;
+}
+
+/* Menu / Price List Section */
+.menu-section{
+    min-height: 100vh;
+    background: url(../image/carousel-2.jpg) center/cover no-repeat;
+    position: relative;
+    padding: 120px 0 80px;
+}
+.menu-section::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 0;
+}
+.menu-section .section-content{
+    position: relative;
+    z-index: 1;
+}
+.menu-card{
+    background-color: rgba(255, 255, 255, 0.96);
+    max-width: 750px;
+    margin: 0 auto;
+    border-radius: 12px;
+    padding: 60px 70px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+.menu-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.menu-header .menu-title{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-xx1);
+    color: var(--text-main);
+    line-height: var(--line-height-heading);
+}
+.menu-header .menu-sub{
+    font-family: var(--font-body);
+    font-size: var(--font-size-m);
+    color: #888;
+    margin-top: 10px;
+}
+
+/* Category Block */
+.menu-category{
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 30px;
+}
+.menu-category:last-of-type{
+    border-bottom: none;
+}
+.category-title{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-1);
+    color: var(--cta-bg);
+    margin-bottom: 18px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--cta-bg);
+    display: inline-block;
+}
+
+/* Menu Items */
+.menu-list{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.menu-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.item-name{
+    font-family: var(--font-body);
+    font-size: var(--font-size-n);
+    color: var(--text-main);
+    white-space: nowrap;
+}
+.item-dots{
+    flex: 1;
+    border-bottom: 3px dotted #ccc;
+    margin: 0 8px;
+    position: relative;
+    top: -4px;
+}
+.item-price{
+    font-family: var(--font-body);
+    font-size: var(--font-size-n);
+    font-weight: var(--font-weight-bold);
+    color: var(--cta-bg);
+    white-space: nowrap;
+}
+
+/* Book Button */
+.menu-book{
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.menu-book-text{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-1);
+    color: var(--text-main);
+}
+.menu-book-btn{
+    display: inline-block;
+    padding: 14px 45px;
+    background-color: var(--cta-bg);
+    color: var(--white-color);
+    font-family: var(--font-body);
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-semibold);
+    border-radius: var(--border-radius-s)
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goldie Beauty Lounge Book Now</title>
+    <!-- Linking Font Awesome Icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+
+<!--Liking Goggle Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!--Linking Global Styling Sheet-->
+<link rel="stylesheet" href="../css/style.css">
+
+<!--Linking Custom Styling Sheet-->
+<link rel="stylesheet" href="../css/book.css">
+</head>
+<body>
+    <header>
+          <nav class="navbar section-content">
+        <a href="../index.html" class="nav-logo"> <span class="logo-title"> GOLDIE</span> <span class="logo-sub">BEAUTY LOUNGE</span></a>
+        <ul class="nav-menu">
+            <li class="nav-items">
+                <a href="../index.html" class="nav-link">Home </a>
+            </li>
+              <li class="nav-items">
+                <a href="../pages/service.html" class="nav-link">Services</a>
+            </li>
+              <li class="nav-items">
+                <a href="../pages/menu.html" class="nav-link">Menu</a>
+            </li>
+              <li class="nav-items">
+                <a href="../pages/contact.html" class="nav-link">Contact Us </a>
+            </li>
+              <li class="nav-items">
+                <a href="../pages/book.html" class="nav-button">Book Now </a>
+            </li>
+        </ul>
+        
+    </nav>
+    </header>
+
+       <main>
+        <!-- Booking Section -->
+        <section class="book-section">
+            <div class="section-content">
+                <div class="book-card">
+
+                    <div class="book-header">
+                        <h2 class="book-title">Book an Appointment</h2>
+                        <p class="book-sub">Fill in your details below. We'll reach out on WhatsApp to confirm your booking.</p>
+                    </div>
+
+                    <form class="book-form" id="bookingForm">
+
+                        <!-- Name Row -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="e.g. Amira" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="e.g. Johnson" required>
+                            </div>
+                        </div>
+
+                        <!-- Contact Row -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="whatsapp">WhatsApp Number</label>
+                                <input type="tel" id="whatsapp" name="whatsapp" placeholder="+234 800 000 0000" required>
+                            </div>
+                        </div>
+
+                        <!-- Service -->
+                        <div class="form-group">
+                            <label for="service">Service</label>
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <optgroup label="Facials">
+                                    <option>Deep Cleansing Facial</option>
+                                    <option>Hydrating Facial</option>
+                                    <option>Acne Treatment Facial</option>
+                                    <option>Anti-Aging Facial</option>
+                                </optgroup>
+                                <optgroup label="Lashes">
+                                    <option>Classic Lashes</option>
+                                    <option>Volume Lashes</option>
+                                    <option>Hybrid Lashes</option>
+                                    <option>Wispy Lashes</option>
+                                    <option>Ombre Lashes</option>
+                                    <option>Lash Refill</option>
+                                    <option>Lash Removal</option>
+                                </optgroup>
+                                <optgroup label="Piercing">
+                                    <option>Lobe Piercing</option>
+                                    <option>Nostril Piercing</option>
+                                    <option>Septum Piercing</option>
+                                    <option>Helix Piercing</option>
+                                    <option>Navel Piercing</option>
+                                    <option>Tragus Piercing</option>
+                                    <option>Industrial Piercing</option>
+                                    <option>Conch Piercing</option>
+                                </optgroup>
+                                <optgroup label="Nails">
+                                    <option>Acrylic Nails</option>
+                                    <option>Gel Nails</option>
+                                    <option>French Tips</option>
+                                    <option>Manicure</option>
+                                    <option>Pedicure</option>
+                                </optgroup>
+                                <optgroup label="Waxing">
+                                    <option>Bikini Wax</option>
+                                    <option>Underarm Wax</option>
+                                    <option>Full Leg Wax</option>
+                                    <option>Eyebrow Wax</option>
+                                </optgroup>
+                                <optgroup label="Makeup">
+                                    <option>Full Glam Makeup</option>
+                                    <option>Natural Makeup</option>
+                                    <option>Bridal Makeup</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <!-- Date & Time Row -->
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="date">Preferred Date</label>
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="time">Preferred Time</label>
+                                <div class="time-inputs">
+                                    <input type="number" id="timeHour" name="timeHour" placeholder="HH" min="1" max="12" required>
+                                    <span class="time-sep">:</span>
+                                    <input type="number" id="timeMin" name="timeMin" placeholder="MM" min="0" max="59" required>
+                                    <select id="timeAmPm" name="timeAmPm">
+                                        <option value="AM">AM</option>
+                                        <option value="PM">PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-group">
+                            <label for="message">Additional Message <span class="optional">(optional)</span></label>
+                            <textarea id="message" name="message" rows="4" placeholder="Any additional info or requests..."></textarea>
+                        </div>
+
+                        <!-- Submit -->
+                        <button type="submit" class="book-submit" id="submitBtn">
+                            <span id="btnText">Submit Booking</span>
+                        </button>
+
+                        <p class="form-note"><i class="fa-brands fa-whatsapp"></i> We'll confirm your booking via WhatsApp.</p>
+
+                    </form>
+
+                    <!-- Success Message -->
+                    <div class="success-msg" id="successMsg">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <h3>Booking Received!</h3>
+                        <p>We'll contact you on WhatsApp shortly to confirm your appointment.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+<section class="footer-section">
+  <div class="section-content">
+    <div class="footer-items">
+      <p class="footer-text"> &copy; Goldie Beauty Lounge.</p> </p>
+            <p class="footer-text"> Malete, Kwara State. </p> </p>
+      <p class="footer-text"> All Rights Reserved.</p> </p>
+    </div>  
+    
+  </div>
+</section>
+</main>
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="../script/book.js"></script>
+</body>
+</html>
