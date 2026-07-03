@@ -165,10 +165,11 @@ header{
 .hero-section{
     background-image: url(../image/hero-bg2.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: center right;
     background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
+    padding: 80px 0;
 }
 .hero-section .section-content{
     display: flex;
@@ -178,13 +179,15 @@ header{
 .hero-section .hero-container{
     display: flex;
     align-items: center;
+    width: 100%;
 }
 .hero-section .hero-container .hero-left{
     display: flex;
     flex-direction: column;
     gap: 15px;
     max-width: 55%;
-    padding-top: 80px;
+    padding: 40px 0;
+    width: 100%;
 }
  .hero-left .hero-details .title .black{
     font-size: var(--font-size-xx1);
@@ -228,6 +231,9 @@ header{
     display: flex;
     gap: 15px;
     margin-top: 20px;
+}
+.line-two{
+    display:inline;
 }
 .hero-button .book-appointment {
   display: inline-block;
@@ -536,9 +542,27 @@ font-size: var(--font-size-1);
     .nav-menu{
         gap:10px;
     }
-    .hero-section .hero-container .hero-left{
-        max-width: 65%;
+    .hero-section{
+        min-height: 80vh;
+         background-position: center right 35%;
     }
+    .hero-left .hero-details .title,
+    .hero-left .hero-details .title .black{
+        font-size:var(--font-size-x1);
+        max-width: 80%;
+    }
+    .hero-container .hero-details .subtext{
+      font-size: var(--font-size-m);
+        max-width: 70%;
+    }
+    .hero-section .hero-container .hero-left{
+        max-width: 55%;
+    }
+    .hero-service .hero-list{
+    display: flex;
+    gap: 20px;
+    max-width: 50%;
+}
     .service-section .service-container{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -596,25 +620,36 @@ font-size: var(--font-size-1);
         display: flex;
         justify-content: center;
     }
-    .hero-section .hero-container{
-        flex-direction: column;
-        align-items: flex-start;
+    .hero-section {
+        min-height: 70vh;
+        background-position: center right 35%;
+    }  
+    .hero-section .hero-left .hero-details{
+        padding-top: 50px;
     }
-    .hero-section .hero-container .hero-left{
+     .line-two {
+        display: block;
+    }
+    .hero-left .hero-details .title,
+    .hero-left .hero-details .title .black{
+        font-size:var(--font-size-x1);
         max-width: 100%;
-        padding-top: 120px;
     }
+   
     .hero-container .hero-details .subtext{
-        max-width: 100%;
+      font-size: var(--font-size-m);
+        max-width: 80%;
+    }
+   .hero-section .hero-container .hero-left{
+        max-width: 55%;
     }
     .hero-service .hero-list{
-        flex-wrap: wrap;
-        gap: 12px 18px;
-    }
-    .hero-container .hero-button{
-        flex-direction: column;
-        align-items: flex-start;
-    }
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+}
+
+
     .service-section .service-container{
         grid-template-columns: 1fr 1fr;
     }
@@ -635,23 +670,36 @@ font-size: var(--font-size-1);
         font-size: 0.85rem;
     }
     .hero-section{
-        min-height: auto;
-        padding: 90px 0 60px;
+        min-height: 60vh;
+        padding: 60px 0;
+        background-position: center right;
+        background-size: cover;
     }
     .hero-section .hero-container .hero-left{
-        padding-top: 80px;
+        padding: 20px 0;
     }
     .hero-left .hero-details .title,
     .hero-left .hero-details .title .black{
-        font-size: 2rem;
+        font-size: 1.75rem;
+        line-height: 1.3;
     }
     .hero-container .hero-details .subtext{
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+        max-width: 100%;
+        line-height: 1.5;
+    }
+    .hero-service .hero-list{
+        gap: 10px 15px;
+    }
+    .hero-service .hero-list .hero-items{
+        font-size: 0.85rem;
     }
     .hero-button .book-appointment,
     .hero-button .view-service{
         width: 100%;
         text-align: center;
+        padding: 0.65rem 1.5rem;
+        font-size: 0.95rem;
     }
     .service-section{
         padding: 80px 0;
@@ -667,5 +715,27 @@ font-size: var(--font-size-1);
     }
     .why-choose-container .why-choose-text{
         font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .hero-section{
+        min-height: 55vh;
+        padding: 50px 0;
+    }
+    .hero-left .hero-details .title,
+    .hero-left .hero-details .title .black{
+        font-size: 1.5rem;
+    }
+    .hero-container .hero-details .subtext{
+        font-size: 0.85rem;
+    }
+    .hero-service .hero-list .hero-items{
+        font-size: 0.8rem;
+    }
+    .hero-button .book-appointment,
+    .hero-button .view-service{
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
     }
 }
