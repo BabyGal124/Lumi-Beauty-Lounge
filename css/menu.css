@@ -201,3 +201,39 @@ html{
     font-weight: var(--font-weight-semibold);
     border-radius: var(--border-radius-s)
 }
+
+@media screen and (max-width: 900px){
+    .menu-card{
+        padding: 40px 30px;
+    }
+    .menu-item{
+        align-items: flex-start;
+    }
+    .item-name{
+        white-space: normal;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .menu-section{
+        padding: 100px 0 60px;
+    }
+    .menu-card{
+        padding: 24px 18px;
+    }
+    .menu-header .menu-title{
+        font-size: 1.8rem;
+    }
+    .menu-item{
+        flex-wrap: wrap;
+    }
+    .item-dots{
+        display: none;
+    }
+    .item-price{
+        margin-left: auto;
+    }
+    .menu-book-btn{
+        width: 100%;
+    }
+}

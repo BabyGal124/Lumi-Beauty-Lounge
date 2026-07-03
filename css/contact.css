@@ -245,6 +245,31 @@ html{
     background-color: var(--cta-hover);
 }
 
+@media screen and (max-width: 900px){
+    .contact-wrapper{
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+    .contact-form-wrapper{
+        padding: 32px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .contact-section{
+        padding: 100px 0 60px;
+    }
+    .contact-form-wrapper{
+        padding: 24px;
+    }
+    .form-row{
+        grid-template-columns: 1fr;
+    }
+    .contact-title{
+        font-size: 1.8rem;
+    }
+}
+
 /* Success Message */
 .contact-success{
     display: flex;

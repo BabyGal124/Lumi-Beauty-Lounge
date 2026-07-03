@@ -23,27 +23,30 @@
 </head>
 <body>
     <header>
-          <nav class="navbar section-content">
-        <a href="../index.html" class="nav-logo"> <span class="logo-title"> GOLDIE</span> <span class="logo-sub">BEAUTY LOUNGE</span></a>
-        <ul class="nav-menu">
-            <li class="nav-items">
-                <a href="./index.html" class="nav-link">Home </a>
-            </li>
-              <li class="nav-items">
-                <a href="../pages/service.html" class="nav-link">Services</a>
-            </li>
-              <li class="nav-items">
-                <a href="../pages/menu.html" class="nav-link">Menu</a>
-            </li>
-              <li class="nav-items">
-                <a href="../pages/contact.html" class="nav-link">Contact Us </a>
-            </li>
-              <li class="nav-items">
-                <a href="../pages/book.html" class="nav-button">Book Now </a>
-            </li>
-        </ul>
-        
-    </nav>
+        <nav class="navbar section-content">
+            <a href="../index.html" class="nav-logo"> <span class="logo-title"> GOLDIE</span> <span class="logo-sub">BEAUTY LOUNGE</span></a>
+            <div class="nav-menu" id="nav-menu">
+                <button id="menu-close-button" class="fas fa-times" aria-label="Close menu"></button>
+                <ul class="nav-list">
+                    <li class="nav-items">
+                        <a href="../index.html" class="nav-link">Home </a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="../pages/service.html" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="../pages/menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="../pages/contact.html" class="nav-link">Contact Us </a>
+                    </li>
+                    <li class="nav-items">
+                        <a href="../pages/book.html" class="nav-button">Book Now </a>
+                    </li>
+                </ul>
+            </div>
+            <button id="menu-open-button" class="fas fa-bars" aria-label="Open menu"></button>
+        </nav>
     </header>
 
     <main>
@@ -284,5 +287,6 @@
 
 </main>
 
+    <script src="../script/script.js"></script>
     </body>
     </html>

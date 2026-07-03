@@ -112,6 +112,11 @@ header{
     align-items: center;
     
 }
+.nav-menu .nav-list{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
 .navbar .nav-menu .nav-items .nav-link{
     padding: 20px 25px;
     color:#111827;
@@ -137,13 +142,13 @@ header{
 
 /*Hamburger & Close Button Styling */
 #menu-open-button{
-    display:none;
+    display: none;
     font-size: 1.6rem;
     color: var(--dark-color);
     background: none;
     border: none;
     cursor: pointer;
-
+    padding: 10px 15px;
 }
 #menu-close-button{
     display:none;
@@ -158,7 +163,7 @@ header{
 
 /*Hero Section Styling */
 .hero-section{
-    background-image: url(../image/hero-bg.jpg);
+    background-image: url(../image/hero-bg2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -526,55 +531,141 @@ font-size: var(--font-size-1);
 /*Media Queries for Responsiveness */
 @media screen and (max-width: 1024px){
     header .navbar{
-        display:flex;
         gap:10px;
     }
     .nav-menu{
-        display:flex;
         gap:10px;
-
+    }
+    .hero-section .hero-container .hero-left{
+        max-width: 65%;
+    }
+    .service-section .service-container{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 900px){
     #menu-open-button{
         display: block;
-    }  
-    .nav-menu{
-        display:none;
-        position:fixed;
-        top:0;
-        left:0;
-        width:100%;
-        height:40vh;
-        background-color: var(--soft-beige);
-        flex-direction: column;
-        align-items:flex-start;
-        justify-content:center;
-        padding:0 20px;
-        z-index:999;
     }
-    .nav-menu.open{
-        display:flex;
+    .navbar .nav-menu{
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 40vh;
+        background-color: rgba(245,230,211,0.98);
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 80px 24px 24px;
+        z-index: 999;
+    }
+    .navbar .nav-menu.open{
+        display: flex;
     }
     #menu-close-button{
-        display:block;
-        position:fixed;
-        color:var(--dark-color);
-        top:20px;
-        right:20px;
-        font-size:1.6rem;
-        z-index:100;
+        display: block;
+        position: fixed;
+        color: var(--dark-color);
+        top: 20px;
+        right: 20px;
+        font-size: 1.6rem;
+        z-index: 1000;
+    }
+    .nav-menu .nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
     }
     .nav-menu .nav-items{
-        width:100%;
+        width: 100%;
+    }
+    .nav-menu .nav-items .nav-link{
+        padding: 0;
+        display: block;
     }
     .nav-menu .nav-items .nav-button{
-        display:block;
-         padding: 10px 20px;
+        display: block;
+        padding: 10px 20px;
+        text-align: center;
     }
-     .nav-menu .nav-items:last-child {
+    .nav-menu .nav-items:last-child {
         display: flex;
         justify-content: center;
+    }
+    .hero-section .hero-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-section .hero-container .hero-left{
+        max-width: 100%;
+        padding-top: 120px;
+    }
+    .hero-container .hero-details .subtext{
+        max-width: 100%;
+    }
+    .hero-service .hero-list{
+        flex-wrap: wrap;
+        gap: 12px 18px;
+    }
+    .hero-container .hero-button{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .service-section .service-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-section .footer-items{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .section-content{
+        padding: 0 16px;
+    }
+    .nav-logo .logo-title{
+        font-size: 1.4rem;
+    }
+    .nav-logo .logo-sub{
+        font-size: 0.85rem;
+    }
+    .hero-section{
+        min-height: auto;
+        padding: 90px 0 60px;
+    }
+    .hero-section .hero-container .hero-left{
+        padding-top: 80px;
+    }
+    .hero-left .hero-details .title,
+    .hero-left .hero-details .title .black{
+        font-size: 2rem;
+    }
+    .hero-container .hero-details .subtext{
+        font-size: 0.95rem;
+    }
+    .hero-button .book-appointment,
+    .hero-button .view-service{
+        width: 100%;
+        text-align: center;
+    }
+    .service-section{
+        padding: 80px 0;
+    }
+    .service-section .service-container{
+        grid-template-columns: 1fr;
+    }
+    .why-choose{
+        padding: 80px 0;
+    }
+    .why-choose-container .why-choose-title{
+        font-size: 1.6rem;
+    }
+    .why-choose-container .why-choose-text{
+        font-size: 0.95rem;
     }
 }

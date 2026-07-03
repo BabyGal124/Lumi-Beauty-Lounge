@@ -225,3 +225,47 @@ html{
 .service-card-btn:hover{
     background-color: var(--cta-hover);
 }
+
+@media screen and (max-width: 1024px){
+    .service-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px){
+    .service-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .tab-buttons{
+        gap: 8px;
+    }
+    .tab-btn{
+        flex: 1 1 calc(50% - 8px);
+        padding: 10px 14px;
+        text-align: center;
+    }
+    .service-hero{
+        min-height: 40vh;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .service-grid{
+        grid-template-columns: 1fr;
+    }
+    .service-tabs-section{
+        padding: 50px 0 80px;
+    }
+    .service-hero-info{
+        padding: 70px 16px 0;
+    }
+    .service-hero-heading{
+        font-size: 1.9rem;
+    }
+    .service-hero-sub{
+        font-size: 0.95rem;
+    }
+    .tab-btn{
+        flex-basis: 100%;
+    }
+}

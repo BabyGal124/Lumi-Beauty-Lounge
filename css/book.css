@@ -304,3 +304,30 @@ html{
     padding: 0;
     border: none;
 }
+
+@media screen and (max-width: 900px){
+    .book-section{
+        padding: 110px 0 60px;
+    }
+    .book-card{
+        padding: 40px 30px;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .book-card{
+        padding: 28px 18px;
+    }
+    .form-row{
+        grid-template-columns: 1fr;
+    }
+    .time-inputs{
+        flex-wrap: wrap;
+    }
+    .checkbox-grid{
+        grid-template-columns: 1fr;
+    }
+    .book-title{
+        font-size: 1.7rem;
+    }
+}
