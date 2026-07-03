@@ -1,14 +1,16 @@
 
+
 // Appointment form submission
 const appointmentForm = document.querySelector('.appointment-form');
+if (appointmentForm) {
+    appointmentForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // prevent actual form submission
+        alert('Booking received!'); // show alert
 
-appointmentForm.addEventListener('submit', function(e) {
-    e.preventDefault(); // prevent actual form submission
-    alert('Booking received!'); // show alert
-
-    // Reset the form fields
-    appointmentForm.reset();
-});
+        // Reset the form fields
+        appointmentForm.reset();
+    });
+}
 
 // Navbar toggle
 const openBtn= document.getElementById('menu-open-button');
@@ -21,4 +23,4 @@ openBtn.addEventListener('click', () => {
 
 closeBtn.addEventListener('click', () => {
     navMenu.classList.remove('open');
-});
+}); 
