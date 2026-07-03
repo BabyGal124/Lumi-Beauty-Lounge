@@ -135,6 +135,26 @@ header{
     color: var(--cta-hover);
 }
 
+/*Hamburger & Close Button Styling */
+#menu-open-button{
+    display:none;
+    font-size: 1.6rem;
+    color: var(--dark-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+#menu-close-button{
+    display:none;
+    font-size: 1.6rem;
+    color: var(--dark-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+
+}
 
 /*Hero Section Styling */
 .hero-section{
@@ -502,3 +522,59 @@ font-size: var(--font-size-1);
     letter-spacing: 0.5px;
 }
 
+
+/*Media Queries for Responsiveness */
+@media screen and (max-width: 1024px){
+    header .navbar{
+        display:flex;
+        gap:10px;
+    }
+    .nav-menu{
+        display:flex;
+        gap:10px;
+
+    }
+}
+
+@media screen and (max-width: 900px){
+    #menu-open-button{
+        display: block;
+    }  
+    .nav-menu{
+        display:none;
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:40vh;
+        background-color: var(--soft-beige);
+        flex-direction: column;
+        align-items:flex-start;
+        justify-content:center;
+        padding:0 20px;
+        z-index:999;
+    }
+    .nav-menu.open{
+        display:flex;
+    }
+    #menu-close-button{
+        display:block;
+        position:fixed;
+        color:var(--dark-color);
+        top:20px;
+        right:20px;
+        font-size:1.6rem;
+        z-index:100;
+    }
+    .nav-menu .nav-items{
+        width:100%;
+    }
+    .nav-menu .nav-items .nav-button{
+        display:block;
+         padding: 10px 20px;
+    }
+     .nav-menu .nav-items:last-child {
+        display: flex;
+        justify-content: center;
+    }
+}
