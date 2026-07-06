@@ -7,29 +7,20 @@
 :root{
     /*Colors*/
     /*Backgroud colors */
-    --bg-main:#f7f5f2;
-     --bg-section: #EFEAE4;
-     --card-bg: #F3E8E0;  
-      --yellow-color:#FBBF24;
-     
-     /*Text Color */
-      --text-main: #2F2F2F;
-      --white-color:#ffff;
+    --gold-color: #C9A227;
+    --dark-color:#071020;
+    --white-color:#FFFFFF;
+    --soft-beige:#F5E6D3;
+    --hero-bg:#FAF4EC;
+     --text-main: #2F2F2F;
+     --cta-bg: #C6A769; 
+   --cta-hover: #B89655; 
+   --green-color:#25D366;
 
-    /*CTA Colors */  
-    --cta-bg: #C6A769; 
-      --cta-hover: #B89655; 
-
-
-    --accent-color: #D8A7A7;  
-       --primary-accent: #C6A769;
-      --secondary-accent: #BFA89F;
-
-      
  
     /*Font-Family */
-    --font-heading:'Poppins', sans-serif;
-    --font-body:'Roboto', sans-serif;
+    --font-heading:"Playfair Display", serif;
+    --font-body:"Poppins", sans-serif;
 
 
           /* font size*/
@@ -39,7 +30,7 @@
     --font-size-m:1.12rem;
     --font-size-1:1.5rem;
     --font-size-x1:2rem;
-    --font-size-xx1:3rem;
+    --font-size-xx1:2.5rem;
     
 
     /* font weight*/
@@ -49,7 +40,7 @@
     --font-weight-bold:700;
 
     /*Border radius*/
-    --border-radius-s:8px;
+    --border-radius-s:4px;
     --border-radius-m:30px;
     --boder-radius-circle:50%;
     
@@ -58,7 +49,7 @@
     --line-height-heading:1.2;
 
     /*site max width */
-    --site-max-width:1300px
+    --site-max-width:1200px
 }
 
 /*Styling for the whole site*/
@@ -72,7 +63,6 @@ a{
 button{
     cursor: pointer;
     border: none;
-    
     background: none;
 }
 html{
@@ -81,8 +71,9 @@ html{
 .section-content{
     margin: 0 auto;
     padding: 0 20px;
-    max-width: 1300px;
+    max-width: 1200px;
 }
+
 
 /* Booking Section */
 .book-section{
@@ -226,7 +217,7 @@ html{
     color: #888;
 }
 .form-note i{
-    color: #25D366;
+    color: var(--green-color);
     margin-right: 5px;
 }
 
@@ -241,7 +232,7 @@ html{
 }
 .success-msg i{
     font-size: 4rem;
-    color: #25D366;
+    color: var(--green-color);
 }
 .success-msg h3{
     font-family: var(--font-heading);
@@ -254,56 +245,7 @@ html{
     color: #666;
 }
 
-/* Service Checkboxes */
-.service-checkboxes{
-    border: 1.5px solid #ddd;
-    border-radius: var(--border-radius-s);
-    padding: 16px;
-    background-color: #fafafa;
-    max-height: 280px;
-    overflow-y: auto;
-}
-.checkbox-category{
-    font-family: var(--font-body);
-    font-size: var(--font-size-s);
-    font-weight: var(--font-weight-bold);
-    color: var(--cta-bg);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 12px 0 8px;
-}
-.checkbox-category:first-child{
-    margin-top: 0;
-}
-.checkbox-grid{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6px;
-}
-.checkbox-item{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-family: var(--font-body);
-    font-size: var(--font-size-s);
-    color: var(--text-main);
-    cursor: pointer;
-    padding: 4px 6px;
-    border-radius: 4px;
-    transition: background 0.2s;
-}
-.checkbox-item:hover{
-    background-color: #f0e6d3;
-}
-.checkbox-item input[type="checkbox"]{
-    accent-color: var(--cta-bg);
-    width: 15px;
-    height: 15px;
-    cursor: pointer;
-    min-width: unset;
-    padding: 0;
-    border: none;
-}
+
 
 @media screen and (max-width: 900px){
     .book-section{
@@ -324,10 +266,8 @@ html{
     .time-inputs{
         flex-wrap: wrap;
     }
-    .checkbox-grid{
-        grid-template-columns: 1fr;
-    }
+  
     .book-title{
-        font-size: 1.7rem;
+        font-size: var(--font-size-1);
     }
 }

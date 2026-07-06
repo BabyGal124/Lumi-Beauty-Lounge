@@ -12,7 +12,10 @@
     --white-color:#FFFFFF;
     --soft-beige:#F5E6D3;
     --hero-bg:#FAF4EC;
-
+     --cta-bg: #C6A769; 
+       --text-main: #2F2F2F;
+           --cta-hover: #B89655;
+           --green-color:#25D366; 
  
     /*Font-Family */
     --font-heading:"Playfair Display", serif;
