@@ -227,6 +227,7 @@ header{
 }
 .hero-service .hero-list{
     display: flex;
+    flex-direction: row;
     gap: 25px;
 }
 .hero-service .hero-list li:nth-child(1){
@@ -301,7 +302,7 @@ header{
 }
 .service-section .service-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr) !important;
     gap: 20px;
 }
 .service-container .service-item{
@@ -439,7 +440,7 @@ font-size: var(--font-size-x1);
 }
 .testimonial-section .testimonial-grid{
     display:grid;
-   grid-template-columns: repeat(3, 1fr);
+   grid-template-columns: repeat(3, 1fr) !important;
    gap:20px;
 }
 .testimonial-section .testimonial:hover{
@@ -639,34 +640,7 @@ font-size: var(--font-size-x1);
     }
     .hero-section {
         min-height: 70vh;
-        background-position: center;
-        background-size: cover;
-        position: relative;
-        justify-content: center;
-    }
-    .hero-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-color: rgba(0, 0, 0, 0.4);
-        z-index: 0;
-    }
-    .hero-section .section-content {
-        position: relative;
-        z-index: 1;
-        width: 100%;
-        justify-content: center;
-    }
-    .hero-section .hero-container {
-        justify-content: center;
-    }
-    .hero-section .hero-container .hero-left {
-        max-width: 100%;
-        align-items: center;
-        text-align: center;
+        background-position: center right 35%;
     }  
     .hero-section .hero-left .hero-details{
         padding-top: 50px;
@@ -704,7 +678,7 @@ font-size: var(--font-size-x1);
         flex-wrap: wrap;
         text-align: center;
     }
-}
+
 
 @media screen and (max-width: 600px){
     .section-content{
