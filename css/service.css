@@ -7,29 +7,19 @@
 :root{
     /*Colors*/
     /*Backgroud colors */
-    --bg-main:#f7f5f2;
-     --bg-section: #EFEAE4;
-     --card-bg: #F3E8E0;  
-      --yellow-color:#FBBF24;
-     
-     /*Text Color */
-      --text-main: #2F2F2F;
-      --white-color:#ffff;
-
-    /*CTA Colors */  
-    --cta-bg: #C6A769; 
-      --cta-hover: #B89655; 
-
-
-    --accent-color: #D8A7A7;  
-       --primary-accent: #C6A769;
-      --secondary-accent: #BFA89F;
-
-      
+    --gold-color: #C9A227;
+    --dark-color:#071020;
+    --white-color:#FFFFFF;
+    --soft-beige:#F5E6D3;
+    --hero-bg:#FAF4EC;
+     --cta-bg: #C6A769; 
+       --text-main: #2F2F2F;
+           --cta-hover: #B89655;
+           --green-color:#25D366; 
  
     /*Font-Family */
-    --font-heading:'Poppins', sans-serif;
-    --font-body:'Roboto', sans-serif;
+    --font-heading:"Playfair Display", serif;
+    --font-body:"Poppins", sans-serif;
 
 
           /* font size*/
@@ -49,7 +39,7 @@
     --font-weight-bold:700;
 
     /*Border radius*/
-    --border-radius-s:8px;
+    --border-radius-s:4px;
     --border-radius-m:30px;
     --boder-radius-circle:50%;
     
@@ -58,7 +48,7 @@
     --line-height-heading:1.2;
 
     /*site max width */
-    --site-max-width:1300px
+    --site-max-width:1200px
 }
 
 /*Styling for the whole site*/
@@ -80,7 +70,7 @@ html{
 .section-content{
     margin: 0 auto;
     padding: 0 20px;
-    max-width: 1300px;
+    max-width: 1200px;
 }
 
 /*About Hero Section Styling */
@@ -134,7 +124,7 @@ html{
 .tab-buttons{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 2px;
     margin-bottom: 40px;
     border-bottom: 2px solid #e5e7eb;
     padding-bottom: 0;
