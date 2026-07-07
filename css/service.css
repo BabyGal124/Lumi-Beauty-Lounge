@@ -215,6 +215,8 @@ html{
 .service-card-btn:hover{
     background-color: var(--cta-hover);
 }
+/*Media queries */
+
 
 @media screen and (max-width: 1024px){
     .service-grid{
