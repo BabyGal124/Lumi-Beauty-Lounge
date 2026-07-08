@@ -7,5 +7,5 @@
                 tabContents.forEach(c => c.classList.remove('active'));
                 btn.classList.add('active');
                 document.getElementById(btn.dataset.tab).classList.add('active');
-            });
+            }); 
         });
