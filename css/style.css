@@ -573,11 +573,11 @@ font-size: var(--font-size-x1);
     max-width: 50%;
 }
     .service-section .service-container{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
     }
     .testimonial-section .testimonial-grid{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr) !important;
     }
      .testimonial-section .testimonial-grid .testimonial:nth-child(3){
         grid-column: 1 / -1;
