@@ -167,84 +167,90 @@ header{
 
 /*Hero Section Styling */
 .hero-section{
-    background-image: url(../image/hero-bg2.jpg);
-    background-size: contain;
-    background-position: right center;
+    background-image: url(../image/carousel-3.jpg);
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding: 0;
-    margin-top: -90px;
-    padding-top: 80px;
     position: relative;
     z-index: 1;
 }
+.hero-section::before{
+     content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 0;
+}   
 .hero-section .section-content{
     display: flex;
     align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     width: 100%;
+    position: relative;
 }
 .hero-section .hero-container{
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
 }
 .hero-section .hero-container .hero-left{
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    max-width: 55%;
-    padding: 40px 0;
+    gap: 24px;
+    max-width: 820px;
+    padding: 60px 24px;
     width: 100%;
+    text-align: center;
+    align-items: center;
 }
- .hero-left .hero-details .title .black{
-    font-size: var(--font-size-xx1);
-    font-family: var(--font-heading);
-    color: var(--dark-color);
-      line-height: var(--line-height-heading);
-}
+
  .hero-left .hero-details .title{
     font-size: var(--font-size-xx1);
     font-family: var(--font-heading);
-    color: var(--gold-color);
-    line-height: var(--line-height-heading);
+    color: var(--white-color);
+    line-height: 1.05;
 }
 .hero-container .hero-details .subtext{
     font-family: var(--font-body);
     font-size: var(--font-size-m);
     line-height: var(--line-height-body);
-    max-width: 70%;
+    max-width: 760px;
+    margin: 0 auto;
+    color: rgba(255,255,255,0.92);
 }
 .hero-container .hero-service .hero-list .hero-items{
     font-family: var(--font-body);
     font-size: var(--font-size-n);
+    color: var(--white-color);
 }
 .hero-section .hero-left .hero-details{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    align-items: center;
 }
 .hero-service .hero-list{
     display: flex;
     flex-direction: row;
     gap: 25px;
 }
-.hero-service .hero-list li:nth-child(1){
-    list-style-type: none;
+.hero-service .hero-list {
+    list-style: disc;
 }
-.hero-service .hero-list li{
-    list-style-type: disc;
+.hero-service .hero-list :nth-child(1){
+    list-style: none;
 }
-
 .hero-container .hero-button{
     display: flex;
-    gap: 15px;
-    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 10px;
 }
-.line-two{
-    display:inline;
-}
+
 .hero-button .book-appointment {
   display: inline-block;
   padding: 0.75rem 2rem;       
@@ -260,7 +266,7 @@ header{
   padding: 0.75rem 2rem;       
   font-size: var(--font-size-m); 
   font-weight: var(--font-weight-normal);
-  color: var(--dark-color);    
+  color: var(--white-color);    
   border: 1px solid var(--gold-color);
   text-decoration: none;
   font-family: var(--font-body);
@@ -269,7 +275,7 @@ header{
 .hero-button .book-appointment:hover {
  background: transparent;
     border: 1px solid var(--gold-color);
-    color: var(--dark-color);
+    color: var(--white-color);
 }
 .hero-button .view-service:hover {
    background-color: var(--gold-color);   
