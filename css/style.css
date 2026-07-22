@@ -569,8 +569,8 @@ font-size: var(--font-size-x1);
     flex-direction: column;
     gap: 20px;
    }
-  
-    .service-section .service-container{
+    
+   .service-section .service-container{
         grid-template-columns: repeat(2, 1fr);
     }
     .testimonial-section .testimonial-grid{
@@ -613,6 +613,12 @@ font-size: var(--font-size-x1);
         font-size: 1.6rem;
         z-index: 1000;
     }
+     .nav-menu .nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
     .nav-menu .nav-items{
         width: 100%;
     }
@@ -646,7 +652,7 @@ font-size: var(--font-size-x1);
         font-size: var(--font-size-n);
     }
     .hero-service .hero-list{
-        gap: 15px;
+        gap: 45px;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -696,10 +702,7 @@ font-size: var(--font-size-x1);
         max-width: 50%;
         margin: 0 auto;
     }
-    .testimonial-section .testimonial .testimonial-image{
-        width: 70px;
-        height: 70px;
-    }
+   
 
     /* Footer */
     .footer-section .footer-items{
@@ -722,7 +725,7 @@ font-size: var(--font-size-x1);
         font-size: 0.85rem;
     }
     .hero-section{
-        min-height: 100vh;
+        min-height: 80vh;
         background-position: center;
     }
     .hero-section .hero-container .hero-left{
@@ -735,11 +738,11 @@ font-size: var(--font-size-x1);
     }
     .hero-container .hero-details .subtext{
         font-size: 0.95rem;
-        max-width: 100%;
+        max-width: 95%;
         line-height: 1.6;
     }
     .hero-service .hero-list{
-        gap: 10px 12px;
+        gap: 30px;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -759,6 +762,21 @@ font-size: var(--font-size-x1);
     .service-section .service-container{
         grid-template-columns: 1fr;
     }
+    .service-item .service-image{
+        height: 250px;
+    }
+    /* Testimonials */
+    .testimonial-section .testimonial-grid{
+        grid-template-columns: 1fr;
+    }
+    .testimonial-section .testimonial-grid .testimonial{
+        width: 100%;
+        max-width: 700px;
+    }
+     .testimonial-section .testimonial-grid .testimonial:nth-child(3){
+        width: 100%;
+        max-width: 700px;
+    }
     .why-choose{
         padding: 80px 0;
     }
@@ -768,6 +786,7 @@ font-size: var(--font-size-x1);
     .why-choose-container .why-choose-text{
         font-size: 0.95rem;
     }
+    
 }
 
 @media screen and (max-width: 400px){
