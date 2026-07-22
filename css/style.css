@@ -308,9 +308,10 @@ header{
 }
 .service-section .service-container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
 .service-container .service-item{
     position: relative;
     overflow: hidden;
@@ -445,9 +446,9 @@ font-size: var(--font-size-x1);
   color: var(--text-main);
 }
 .testimonial-section .testimonial-grid{
-    display:grid;
-   grid-template-columns: repeat(3, 1fr) !important;
-   gap:20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 .testimonial-section .testimonial:hover{
      transform: translateY(-2px);
@@ -579,11 +580,11 @@ font-size: var(--font-size-x1);
     max-width: 50%;
 }
     .service-section .service-container{
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr);
     }
     .testimonial-section .testimonial-grid{
         display: grid;
-        grid-template-columns: repeat(2, 1fr) !important;
+        grid-template-columns: repeat(2, 1fr);
     }
      .testimonial-section .testimonial-grid .testimonial:nth-child(3){
       grid-column: 1 / -1;
@@ -663,15 +664,14 @@ font-size: var(--font-size-x1);
       font-size: var(--font-size-m);
         max-width: 80%;
     }
-   .hero-container .hero-button{
+    .hero-container .hero-button{
         margin-top: 10px;
    }
-    }
     .hero-service .hero-list{
-    display: flex;
-    gap: 20px;
-    max-width: 100%;
-}
+        display: flex;
+        gap: 20px;
+        max-width: 100%;
+    }
     .service-section .service-container{
         grid-template-columns: 1fr 1fr;
     }
@@ -683,6 +683,7 @@ font-size: var(--font-size-x1);
         flex-wrap: wrap;
         text-align: center;
     }
+}
 
 
 @media screen and (max-width: 600px){
